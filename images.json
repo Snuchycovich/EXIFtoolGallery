@@ -1,0 +1,66 @@
+{ "images" : [
+  {
+    "name"  : "MIT_Stata_center",
+    "alt" : "MIT_Stata_center",
+    "url": "uploads/MIT_Stata_center.jpg"
+  },
+  {
+    "name"  : "Cupertino_Apple",
+    "alt" : "Cupertino_Apple",
+    "url": "uploads/Cupertino_Apple.jpg"
+  },
+
+  {
+    "name"  : "Dallas",
+    "alt" : "Dallas",
+    "url": "uploads/Dallas.jpg"
+  },
+  {
+    "name"  : "Detroit",
+    "alt" : "Detroit",
+    "url": "uploads/Detroit.jpg"
+  },
+  {
+    "name"  : "Grand_Canyon_National_Park",
+    "alt" : "Grand_Canyon_National_Park",
+    "url": "uploads/Grand_Canyon_National_Park.jpg"
+  },
+  {
+    "name"  : "Joshua_tree_National_Park",
+    "alt" : "Joshua_tree_National_Park",
+    "url": "uploads/Joshua_tree_National_Park.jpg"
+  },
+  {
+    "name"  : "Lincoln_Memorial",
+    "alt" : "Lincoln_Memorial",
+    "url": "uploads/Lincoln_Memorial.jpg"
+  },
+
+  {
+    "name"  : "Chicago_lighthouse",
+    "alt" : "Chicago_lighthouse",
+    "url": "uploads/Chicago_lighthouse.jpg"
+  },
+
+  {
+    "name"  : "Montreal",
+    "alt" : "Montreal",
+    "url": "uploads/Montreal.jpg"
+  },
+  {
+    "name"  : "Mountain_View_Googleplex",
+    "alt" : "Mountain_View_Googleplex",
+    "url": "uploads/Mountain_View_Googleplex.jpg"
+  },
+  {
+    "name"  : "White_Sands",
+    "alt" : "White_Sands",
+    "url": "uploads/White_Sands.jpg"
+  },
+  {
+    "name"  : "Yosemite_National_park",
+    "alt" : "Yosemite_National_park",
+    "url": "uploads/Yosemite_National_park.jpg"
+  }
+
+]}
