@@ -25,3 +25,16 @@ a {
 .panel {
     background-color: rgba(255,140,0, 0.2);
 }
+
+.editAttributes li.panel a{
+	display: block;
+	padding: 5px 10px;
+}
+.editAttributes li.panel a:hover{
+	background: rgba(98, 204, 24, 0.74) none repeat scroll 0% 0%;
+	color: blanchedalmond;
+	text-decoration: none;
+}
+.editAttributes li.panel ul{
+	padding: 10px 20px;
+}

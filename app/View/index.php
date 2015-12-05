@@ -104,12 +104,12 @@ $(document).on('ready', function() {
         uploadLabel: "Upload",
         uploadIcon: "<i class=\"glyphicon glyphicon-upload\"></i> "
     });
-$(".fileinput-upload").click(function(){
-	alert("click")
-	$("#input-21").addClass("file-loading");
-	$("#input-21").removeClass("file");
+    $(".fileinput-upload").click(function(){
+    	alert("click")
+    	$("#input-21").addClass("file-loading");
+    	$("#input-21").removeClass("file");
 
-});
+    });
 });
 </script>
 

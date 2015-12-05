@@ -90,26 +90,33 @@ $url = "app/uploads/";
         </div>
         <div id="metadata" class="col-xs-8 center-block">
             <h2 class="text-center">Images Metadatas</h2>
-            <ul class="nav nav-stacked" id="accordion1">
-                <?php
-                if (isset($json))
-                    foreach ($json as $key => $values) {
-                        if ($key !== "SourceFile" && $key !== "ExifTool") {
-                            ?>
-                            <li class="panel"><a data-toggle="collapse" data-parent="#accordion1" href="#<?= $key ?>">
-                                    <b><font size="4"><?= $key ?></font></b></a>
+            <ul class="nav nav-stacked editAttributes" id="accordion1">
+                <form action="app/Controller/update.php" method="POST">
+                    <input type="hidden" name="filename" value="<?php echo $_POST["url"] ?>" />
+                    <?php
+                    if (isset($json))
+                        foreach ($json as $key => $values) {
+                            if ($key !== "SourceFile" && $key !== "ExifTool") {
+                                ?>
+                                <li class="panel"><a data-toggle="collapse" data-parent="#accordion1" href="#<?= $key ?>">
+                                        <b><font size="4"><?= $key ?></font></b></a>
 
-                                <ul id="<?= $key ?>" class="collapse">
-                                    <?php
-                                    foreach ($values as $k => $value) {
-                                        if (is_array($value))
-                                            $value = implode(", ", $value);
-                                        echo "<li><b>" . $k . '</b> : ' . strval($value) . "</li>";
-                                    } ?>
-                                </ul>
-                            </li>
-                        <?php }
-                    } ?>
+                                    <ul id="<?= $key ?>" class="collapse">
+                                        <?php
+                                        foreach ($values as $k => $value) {
+                                            if (is_array($value))
+                                                $value = implode(", ", $value);
+                                                echo '<div class="form-group">
+                                                    <label>'.$k.'</label>
+                                                    <input type="text" class="form-control" name="'.$k.'" placeholder="'.$k.'" value="'.strval($value).'">
+                                                  </div>';
+                                        } ?>
+                                    </ul>
+                                </li>
+                            <?php }
+                        } ?>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                </form>
             </ul>
         </div>
     </div>
